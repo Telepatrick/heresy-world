@@ -1,78 +1,108 @@
 <html>
 <head>
-<title>Classes</title>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" type="text/javascript"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<style>
-.field {
-  border-bottom: 1px solid #000;
-  width: 10em;
-  display: inline-block;
-}
-
-.move-explanation {
-  border-left: 5px solid #e0e0e0;
-  padding: 0 0 0 1em;
-  margin: 0.5em 0;
-  color: #444;
-}
-
-.move h3 {
-  margin-top: 30px;
-}
-
-@media print {
-  input {
-    border: 1px solid #ccc;
+  <title>Classes</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .field {
+    border-bottom: 1px solid #000;
+    width: 10em;
+    display: inline-block;
   }
-  abbr[title]:after {
-    content: "";
+
+  .move-explanation {
+    border-left: 5px solid #e0e0e0;
+    padding: 0 0 0 1em;
+    margin: 0.5em 0;
+    color: #444;
   }
-}
-</style>
+
+  .move h3 {
+    margin-top: 30px;
+  }
+
+  @media print {
+    input {
+      border: 1px solid #ccc;
+    }
+    abbr[title]:after {
+      content: "";
+    }
+  }
+  </style>
 </head>
 <body>
-<div class="container">
-<nav class="navbar navbar-default">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="./introduction.html">Powered by Heresy</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="./index.html">Contents</a></li>
-        <li><a href="./character_creation.html">Character Creation</a></li>
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Moves <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="./basic_moves.html">Basic Moves</a></li>
-              <li><a href="./special_moves.html">Special Moves</a></li>
-            </ul>
-          </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">Docs</a></li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container-fluid -->
-</nav>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./introduction.html">Heresy World</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="./index.html">Contents</a></li>
+            <li><a href="./character_creation.html">Character Creation</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Moves <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="./basic_moves.html">Basic Moves</a></li>
+                <li><a href="./special_moves.html">Special Moves</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Classes<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="./investigator.html">Investigator</a></li>
+                <li><a href="./warrior.html">Warrior</a></li>
+                <li><a href="./assassin.html">Assassin</a></li>
+              </ul>
+            </li>
+            <li><a href="./advanced_moves.html">Advanced Moves</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Equipment<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="./equipment.html">Equipment</a></li>
+                <li><a href="./equipment_upgrading.html">Equipment Upgrading</a></li>
+                <li><a href="./artifacts.html">Artifacts and Relics</a></li>
+              </ul>
+            </li>
+            <li><a href="./the_gm.html">The GM</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Missions<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="./missions.html">Missions</a></li>
+                <li><a href="./tainted_conflict.html">Tainted Conflict</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Docs</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
 
-<h1>Classes</h1>
-<h3><a href="./investigator.html">Investigator</a></h3>
-<div class="class-description"><p>Investigator is a detective. They've got a nose for heresy.</p></div>
-<h3><a href="./warrior.html">Warrior</a></h3>
-<div class="class-description">The Warrior is a fighter, either from birth, by choice, or through dangerous circumstances. They are at home on the battlefield.</div>
-<h3><a href="./assassin.html">Assassin</a></h3>
-<div class="class-description">Assassin is sneaky and stabby or sneaky and shooty.</div>
-</div>
+    <div class="row">
+      <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+        <h1>Classes</h1>
+        <h3><a href="./investigator.html">Investigator</a></h3>
+        <div class="class-description"><p>Investigator is a detective. They've got a nose for heresy.</p></div>
+        <h3><a href="./warrior.html">Warrior</a></h3>
+        <div class="class-description">The Warrior is a fighter, either from birth, by choice, or through dangerous circumstances. They are at home on the battlefield.</div>
+        <h3><a href="./assassin.html">Assassin</a></h3>
+        <div class="class-description">Assassin is sneaky and stabby or sneaky and shooty.</div>
+      </main>
+    </div>
+  </div>
 
 <script type="text/javascript">
 $('.dropdown-toggle').dropdown()
